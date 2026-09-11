@@ -1,0 +1,39 @@
+# Git
+.git
+.gitignore
+.gitattributes
+.github
+
+# .NET build output
+**/bin/
+**/obj/
+**/TestResults/
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+
+# Documentation and local artifacts
+README.md
+DEPLOYMENT.md
+DATABASE-SAFETY.md
+ONLINE-IMAGES.md
+*.md
+*.zip
+*.tar
+*.tar.gz
+
+# Logs / temp
+*.log
+*.tmp
+*.temp

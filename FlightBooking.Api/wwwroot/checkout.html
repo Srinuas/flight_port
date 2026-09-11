@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Checkout — Flyora</title><link rel="stylesheet" href="/css/styles.css"></head>
+<body><header class="nav"><a class="brand" href="/index.html"><span>✈</span> Flyora</a><nav><a href="/flights.html">Flights</a><a href="/favorites.html">Favorites</a><a href="/orders.html">My Trips</a></nav></header>
+<main class="page"><section class="page-title"><span>SECURE CHECKOUT</span><h1>Complete your booking</h1></section><div class="checkout-grid"><section class="panel" id="flightSummary">Loading flight…</section><section class="panel"><h2>Passenger & payment</h2><label>Passenger full name<input id="passengerName" required></label><label>Passengers<select id="seatCount"><option>1</option><option>2</option><option>3</option><option>4</option></select></label>
+<div class="payment-tabs"><button data-method="UPI" class="active">UPI</button><button data-method="CARD">Credit / Debit Card</button><button data-method="NETBANKING">Net banking</button></div>
+<div id="paymentFields"></div>
+<div class="captcha"><div id="captchaQuestion">Loading…</div><input id="captchaAnswer" placeholder="Answer" required></div>
+<button class="btn btn-primary full" id="payBtn">Pay & book</button><div id="checkoutMessage" class="message"></div></section></div></main><script src="/js/app.js"></script><script src="/js/checkout.js"></script></body></html>

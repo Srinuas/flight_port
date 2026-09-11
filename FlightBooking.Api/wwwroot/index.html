@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Flyora — Flight Booking</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="/index.html"><span>✈</span> Flyora</a>
+    <nav>
+      <a href="/flights.html">Flights</a>
+      <a href="/favorites.html">Favorites</a>
+      <a href="/orders.html">My Trips</a>
+      <a href="/login.html" id="navAuth">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">SMARTER JOURNEYS • BETTER FARES</span>
+        <h1>Fly farther.<br><span>Feel lighter.</span></h1>
+        <p>Search hand-picked routes, compare fares and reserve your next adventure in a few smooth steps.</p>
+        <a class="btn btn-primary" href="/flights.html">Explore flights</a>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="plane-card">✈</div>
+        <div class="floating-card fc-one">🧳 <b>Fast check-in</b><small>Digital itinerary</small></div>
+        <div class="floating-card fc-two">⭐ <b>Best value</b><small>Curated fares</small></div>
+      </div>
+    </section>
+
+    <section class="search-panel">
+      <div>
+        <label>From</label>
+        <input id="homeOrigin" placeholder="HYD">
+      </div>
+      <div>
+        <label>To</label>
+        <input id="homeDestination" placeholder="DEL">
+      </div>
+      <div>
+        <label>Passengers</label>
+        <select id="homePassengers"><option>1</option><option>2</option><option>3</option><option>4</option></select>
+      </div>
+      <button class="btn btn-dark" onclick="searchFromHome()">Search flights</button>
+    </section>
+
+    <section class="section">
+      <div class="section-heading"><span>INSPIRE YOUR NEXT TRIP</span><h2>Destinations that feel unforgettable</h2></div>
+      <div class="destination-grid">
+        <a class="destination-card" href="/flights.html?to=DEL" style="background-image:url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1000&q=80')"><b>Delhi</b><small>History & culture</small></a>
+        <a class="destination-card" href="/flights.html?to=GOI" style="background-image:url('https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=80')"><b>Goa</b><small>Sun, sand & slow days</small></a>
+        <a class="destination-card" href="/flights.html?to=SIN" style="background-image:url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?auto=format&fit=crop&w=1000&q=80')"><b>Singapore</b><small>City lights & gardens</small></a>
+        <a class="destination-card" href="/flights.html?to=DXB" style="background-image:url('https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=1000&q=80')"><b>Dubai</b><small>Skyline & desert</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Flyora</span><span>Demo booking platform • No real payments processed</span></footer>
+  <script src="/js/app.js"></script>
+</body>
+</html>

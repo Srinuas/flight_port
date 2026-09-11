@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head><meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Login — Flyora</title>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body class="auth-page">
+        <main class="auth-shell">
+            <a class="brand" href="/index.html"><span>✈</span> Flyora</a>
+            <section class="auth-card"><div class="auth-side">
+                <span class="eyebrow">WELCOME BACK</span>
+                <h1>Your next flight is waiting.</h1>
+                <p>Sign in to access saved flights, checkout and your complete booking history.</p>
+            </div>
+            <div class="auth-form">
+                <h2>Sign in</h2>
+                <p class="muted">Use your Gmail or username.</p>
+                <form id="loginForm">
+                    <label>Gmail or username<input id="identifier" required maxlength="120"></label>
+                    <label>Password<input id="password" type="password" minlength="6" maxlength="12" required></label>
+                    <div class="captcha"><div id="captchaQuestion">Loading…</div><input id="captchaAnswer" placeholder="Answer" required></div>
+                    <button class="btn btn-primary full">Login</button>
+                    <div id="message" class="message"></div>
+                </form>
+                <div class="auth-links">
+                    <a href="/forgot-password.html">Forgot password?</a>
+                    <a href="/signup.html">Create account</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/auth-utils.js"></script>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
