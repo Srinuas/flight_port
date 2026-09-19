@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flight-dynamic-deployment
+  namespace: srinu
+  labels:
+    app: flight-dynamic
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flight-dynamic
+  template:
+    metadata:
+      labels:
+        app: flight-dynamic
+    spec:
+      containers:
+      - name: flight-dynamic-container
+        image: srinuas/flight_dynamic:v1
+        ports:
+        - containerPort: 8080
